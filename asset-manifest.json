@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/bbc-clone/static/css/main.a6339c0f.css",
+    "main.js": "/bbc-clone/static/js/main.8db12ac6.js",
+    "static/media/news11.webp": "/bbc-clone/static/media/news11.5524a9f0cc2c660d04e6.webp",
+    "static/media/news2.webp": "/bbc-clone/static/media/news2.b6705b8efe9a4cf35b30.webp",
+    "static/media/news12.webp": "/bbc-clone/static/media/news12.c4cd661d1a9f1cae97d0.webp",
+    "static/media/news5.webp": "/bbc-clone/static/media/news5.fae7d80888589a07724b.webp",
+    "static/media/news8.webp": "/bbc-clone/static/media/news8.378c98838197d2339fe1.webp",
+    "static/media/news6.webp": "/bbc-clone/static/media/news6.489c0f97af56f9aead0b.webp",
+    "static/media/news9.webp": "/bbc-clone/static/media/news9.ff26d36cad59a60ff107.webp",
+    "static/media/news3.webp": "/bbc-clone/static/media/news3.a64b35fa15ca4f9019ef.webp",
+    "static/media/news1.webp": "/bbc-clone/static/media/news1.9aee7cca74be42a70605.webp",
+    "static/media/search-icon.png": "/bbc-clone/static/media/search-icon.bd7781d8af6cf4be119b.png",
+    "static/media/news4.webp": "/bbc-clone/static/media/news4.c61c0434f023a05b162b.webp",
+    "static/media/news10.webp": "/bbc-clone/static/media/news10.b71e552c695478b64454.webp",
+    "static/media/bbc-logo.png": "/bbc-clone/static/media/bbc-logo.0e737dcc8cee27b74b55.png",
+    "static/media/menu-icon.png": "/bbc-clone/static/media/menu-icon.46723dd6327ddc8d113d.png",
+    "static/media/news7.webp": "/bbc-clone/static/media/news7.eaf72cbb3f70e205e444.webp",
+    "index.html": "/bbc-clone/index.html",
+    "main.a6339c0f.css.map": "/bbc-clone/static/css/main.a6339c0f.css.map",
+    "main.8db12ac6.js.map": "/bbc-clone/static/js/main.8db12ac6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6339c0f.css",
+    "static/js/main.8db12ac6.js"
+  ]
+}
