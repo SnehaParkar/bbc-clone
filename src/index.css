@@ -1,13 +1,311 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+	--ff-main: Arial,
+		Helvetica,
+		sans-serif;
+
+	--ff-header: Georgia,
+		'Times New Roman',
+		Times,
+		serif;
+
+	--clr-main: #111;
+
+	--fs-main: 14px;
+
+	--clr-dark-bkg: #000;
+	--clr-ff-light: #fff;
+
+	--clr-light-border: #eee;
+	--clr-dark-border: #000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: var(--ff-main);
+	font-size: var(--fs-main);
+	color: var(--clr-main);
+}
+
+/* ================= Header ================== */
+
+.clonebbc-header {
+	padding: 1rem 1rem;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	border-bottom: 1px solid var(--clr-light-border);
+}
+
+.clonebbc-header * {
+	/* border: 1px solid red; */
+}
+
+.clonebbc-header .bbc-menu {
+	width: 25px;
+	height: auto;
+}
+
+.clonebbc-header .bbc-search {
+	width: 20px;
+	height: auto;
+	margin-left: 10px;
+}
+
+.clonebbc-header .bbc-logo-wrapper {
+	flex: 1;
+	text-align: center;
+}
+
+.clonebbc-header .bbc-logo {
+	width: 90px;
+	height: auto;
+}
+
+.clonebbc-header .login-button,
+.clonebbc-header .register-button {
+	font-size: 1.2em;
+	padding: 5px 10px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.clonebbc-header .register-button {
+	background-color: var(--clr-dark-bkg);
+	color: var(--clr-ff-light)
+}
+
+.navigation-bar-header {
+	border-bottom: 1px solid var(--clr-light-border);
+	overflow: hidden;
+}
+
+.navigation-bar-header ul {
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+
+}
+
+.navigation-bar-header ul>li {
+	font-size: 1em;
+	padding: 10px 7px;
+	font-size: 1em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.navigation-bar-header ul>li:hover {
+	background-color: rgb(230, 232, 234);
+}
+
+.navigation-bar-header ul>li.selected {
+	border-bottom: 3px solid var(--clr-dark-border);
+}
+
+/* ===================== Main News Section ================ */
+
+.main-news-section {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 4fr 2fr;
+	grid-template-rows: 2;
+	padding: 25px 60px;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-news-section.reverse-section {
+	grid-template-columns: 2fr 4fr;
+}
+
+.main-news-section .main-news-section-title {
+	grid-column: 1 / -1;
+	font-family: var(--ff-header);
+	font-weight: bold;
+	font-size: 1.3em;
+	padding: 15px 0 5px;
+	border-top: 2px solid var(--clr-dark-border);
+}
+
+.news-img-box {}
+
+.news-img-box img {
+	width: 100%;
+}
+
+.news-content {
+	display: grid;
+	grid-gap: 20px;
+	font-family: var(--ff-header);
+
+}
+
+.news-title {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.news-desc {
+	font-size: 1.2em;
+}
+
+.news-metadata {
+	--clr-main: #656565;
+	font-size: 0.9em;
+	font-family: var(--ff-main);
+
+}
+
+.news-metadata .timespan {
+	border-right: 1px solid var(--clr-dark-border);
+	margin-right: 5px;
+	padding-right: 10px;
+	color: var(--clr-main);
+}
+
+.news-metadata b {
+	margin: 0 5px;
+}
+
+.news-metadata .news-place {
+	color: var(--clr-main);
+}
+
+.news-metadata .news-see-more {
+	font-weight: 600;
+	font-size: 1.3em;
+}
+
+/* ================== Small News Section =============== */
+
+.small-news-section {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(5, 1fr);
+	padding: 25px 60px;
+}
+
+.small-news-section .small-news-setion-title {
+	grid-column: 1/-1;
+	font-family: var(--ff-header);
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.small-news-section .small-news-content {}
+
+.small-news-content .news-title {
+	font-size: 1.3em;
+	font-weight: 500;
+	margin-bottom: 20px;
+	font-family: var(--ff-header);
+}
+
+/* ====================== Sub News Section =============== */
+
+.sub-news-section {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr 1fr;
+	padding: 60px 60px 20px;
+}
+
+.sub-news-section.three-in-row {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.sub-news-section .sub-news-section-title {
+	grid-column: 1 / -1;
+	font-family: var(--ff-header);
+	font-weight: bold;
+	font-size: 1.3em;
+	padding: 15px 0 5px;
+	border-top: 2px solid var(--clr-dark-border);
+}
+
+.sub-news-content-wrap {
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--clr-light-border);
+}
+
+.sub-news-img-box {}
+
+.sub-news-img-box img {
+	width: 100%;
+}
+
+.sub-news-content {
+	margin-top: 15px;
+	display: grid;
+	grid-gap: 20px;
+
+}
+
+.sub-news-content .news-title {
+	font-size: 1.4em;
+	font-weight: 500;
+	font-family: var(--ff-header);
+}
+
+.sub-news-content .news-desc {
+	font-size: 1.0em;
+	font-family: var(--ff-header);
+}
+
+/* ====================== Footer ===================== */
+
+.clonebbc-footer {
+	padding: 20px 60px 70px;
+	border-top: 1px solid var(--clr-dark-border);
+}
+
+.clonebbc-footer ul {
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: left;
+}
+
+.clonebbc-footer ul>li {
+	cursor: pointer;
+	letter-spacing: 0.5;
+}
+
+.footer-bbc-logo {}
+
+.footer-bbc-logo img {
+	width: 100px;
+	height: auto;
+}
+
+.navigation-bar-footer {
+	padding: 20px 0;
+}
+
+.navigation-bar-footer ul>li {
+	font-size: 1em;
+	padding: 10px 7px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.footer-privacy-section {
+	padding: 20px 0 15px;
+	border-top: 1px solid var(--clr-light-border);
+}
+
+.footer-privacy-section ul>li {
+	font-size: 0.87em;
+	padding: 0px 15px 0 0;
+}
+
+.footer-copyright-text {
+	font-size: 0.87em;
+	letter-spacing: 0.5;
 }
