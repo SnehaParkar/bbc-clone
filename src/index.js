@@ -500,12 +500,12 @@ function App() {
 					</ul>
 				</nav>
 				<div class="footer-copyright-text">
-					Copyright 2024 BBC. All rights reserved. The BBC is not responsible for the content of external sites.
-					<b>Read about our approach to external linking.</b>
+					This is BBC-Clone practice project by scrimba course and
+					developed by sneha parkar.
 				</div>
 
 			</section>
-		</section>
+		</section >
 	);
 }
 
